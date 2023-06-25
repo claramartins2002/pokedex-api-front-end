@@ -3,6 +3,7 @@
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{pokemon}}</mat-card-title>
+<<<<<<< HEAD
       <mat-card-subtitle
         *ngFor="let tipo of type; index as i"
       >
@@ -17,3 +18,19 @@
         </button>
     </mat-card-actions>
   </mat-card>
+=======
+      <mat-card-subtitle>TIPO</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="pegarImagemPokemon()"  alt="Photo of a pokemon">
+    <mat-card-actions>
+        <button mat-fab extended color="warn" 
+        (click)="globalService.addToTeam({
+          name: pokemon,
+          time: 'time',
+          imageUrl: pegarImagemPokemon()
+        })">
+            <mat-icon>add_circle</mat-icon>
+            meu time
+          </button>    </mat-card-actions>
+  </mat-card>
+>>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3

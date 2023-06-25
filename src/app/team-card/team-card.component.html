@@ -1,0 +1,18 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<mat-card class="example-card" style="margin: 5% 5% 5% 5%;">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{pokemon}}</mat-card-title>
+      <mat-card-subtitle>TIPO</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="imageUrl"  alt="Photo of a pokemon">
+    <mat-card-actions>
+        <button mat-fab extended color="warn" (click)="globalService.removeInTeam({
+            name: pokemon,
+            time: 'time',
+            imageUrl: imageUrl
+          })">
+            <mat-icon>remove_circle</mat-icon>
+                        meu time
+          </button>    </mat-card-actions>
+  </mat-card>
