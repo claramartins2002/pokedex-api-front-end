@@ -1,8 +1,5 @@
 import { Component, Input } from '@angular/core';
-<<<<<<< HEAD
-=======
 import { GlobalService } from '../global.service';
->>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3
 
 @Component({
   selector: 'app-pokemon-card',
@@ -10,24 +7,14 @@ import { GlobalService } from '../global.service';
   styleUrls: ['./pokemon-card.component.css']
 })
 export class PokemonCardComponent {
-<<<<<<< HEAD
-  @Input()
-  pokemon: string = "pokemon de teste";
-
-
-  @Input()
-  type: string = "pokemon de teste";
-
-=======
   constructor(public globalService: GlobalService){}
   @Input()
   pokemon: string = "pokemon de teste";
 
-  
+
   @Input()
   type: string = "pokemon de teste";
-  
->>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3
+
   @Input()
   numero: number = 0;
 
@@ -44,11 +31,8 @@ export class PokemonCardComponent {
 
     return s;
   }
-<<<<<<< HEAD
   pegarIconeTipoPokemon(tipo: String) {
     return `assets/${tipo}.png`
   }
-=======
->>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3
 }
 

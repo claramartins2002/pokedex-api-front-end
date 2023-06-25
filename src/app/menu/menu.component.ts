@@ -12,8 +12,7 @@ import { LoginPageComponent } from '../login-page/login-page.component';
 export class MenuComponent {
 
   filtro: string = "";
-<<<<<<< HEAD
-  isLoggedIn: boolean = false;
+  isLoggedIn: boolean = true;
 
   constructor(public dialog: MatDialog, public pokemonService: PokemonServiceService) {}
 
@@ -22,19 +21,7 @@ export class MenuComponent {
     if(this.isLoggedIn){
 
     this.dialog.open(TeamPageComponent, {
-      width: '800px',
-=======
-  isLoggedIn: boolean = true;
-
-  constructor(public dialog: MatDialog, public pokemonService: PokemonServiceService) {}
-
-  //todo- add validacao de login 
-  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
-    if(this.isLoggedIn){
-     
-    this.dialog.open(TeamPageComponent, {
       width: '1200px',
->>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3
       enterAnimationDuration,
       exitAnimationDuration,
     });
@@ -48,8 +35,4 @@ export class MenuComponent {
   }
 }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3

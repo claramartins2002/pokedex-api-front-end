@@ -19,12 +19,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-<<<<<<< HEAD
-import { ModalComponent } from './modal/modal.component';
-=======
 import { TeamCardComponent } from './team-card/team-card.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
->>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3
 
 @NgModule({
   declarations: [
@@ -34,11 +30,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MenuComponent,
     LoginPageComponent,
     TeamPageComponent,
-<<<<<<< HEAD
-    ModalComponent
-=======
     TeamCardComponent
->>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3
   ],
   imports: [
     BrowserModule,
@@ -53,12 +45,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatInputModule,
     MatDialogModule,
     FormsModule,
-<<<<<<< HEAD
-    ReactiveFormsModule
-=======
     ReactiveFormsModule,
     MatSnackBarModule
->>>>>>> 682b9f703466f9ee776f6be0c2111ded08dfdda3
   ],
   providers: [],
   bootstrap: [AppComponent]
