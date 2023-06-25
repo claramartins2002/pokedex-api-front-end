@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Fazer login</h1>
+<div mat-dialog-content>
+    <form class="example-form">
+        <mat-form-field class="example-full-width" color="accent">
+          <mat-label>Usuário</mat-label>
+          <input matInput placeholder="Digite seu usuário" [(ngModel)]="username" name="username">
+        </mat-form-field>
+      <mat-form-field class="example-full-width" color="accent">
+        <mat-label>Digite sua senha</mat-label>
+      <input matInput name ="senha" [type]="hide ? 'password' : 'text'" [(ngModel)]="password" name="password">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="example-button-container">
+        <button mat-raised-button color="warn" (click)="login(username, password)">Entrar</button>
+        </div>

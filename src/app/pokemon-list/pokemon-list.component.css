@@ -1,0 +1,16 @@
+.pokemon-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-H1ya6-OR03yw0n-bmkS2OFw2l2bx0Dq-A&usqp=CAU");
+}
+.example-form {
+    min-width:150px;
+    max-width:500px;
+    width:100%;
+    }
+    .example-full-width{
+    width:100%;
+    }
+    

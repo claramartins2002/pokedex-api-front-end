@@ -1,0 +1,10 @@
+<img
+  src="../../assets/banner.png"
+  width="100%"
+/>
+<mat-toolbar color="primary">
+  <input type="text" placeholder="Busque um pokémon..." [(ngModel)]="filtro" (ngModelChange)='pokemonService.filtrar(filtro)'>
+  <div class="example-button-container">
+  <button mat-raised-button color="warn" style="margin: 1% 30% 1% 30%;" (click)="openDialog('300ms', '150ms')">Meu time</button>
+  </div>
+</mat-toolbar>
