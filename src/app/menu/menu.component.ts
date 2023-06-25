@@ -12,7 +12,7 @@ import { LoginPageComponent } from '../login-page/login-page.component';
 export class MenuComponent {
 
   filtro: string = "";
-  isLoggedIn: boolean = false;
+  isLoggedIn: boolean = true;
 
   constructor(public dialog: MatDialog, public pokemonService: PokemonServiceService) {}
 
@@ -21,7 +21,7 @@ export class MenuComponent {
     if(this.isLoggedIn){
      
     this.dialog.open(TeamPageComponent, {
-      width: '800px',
+      width: '1200px',
       enterAnimationDuration,
       exitAnimationDuration,
     });

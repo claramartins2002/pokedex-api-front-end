@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { TeamServiceService } from '../team-service.service';
 import { MatDialogRef } from '@angular/material/dialog';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-team-page',
@@ -8,6 +8,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./team-page.component.css']
 })
 export class TeamPageComponent {
-  constructor(public teamService: TeamServiceService, public dialogRef: MatDialogRef<TeamPageComponent>) {}
+  pokemonTeam: any[] = [];
+  constructor(public globalService: GlobalService, public dialogRef: MatDialogRef<TeamPageComponent>) {}
 
 }

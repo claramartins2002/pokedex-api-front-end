@@ -5,15 +5,14 @@
       <mat-card-title>{{pokemon}}</mat-card-title>
       <mat-card-subtitle>TIPO</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="pegarImagemPokemon()"  alt="Photo of a pokemon">
+    <img mat-card-image [src]="imageUrl"  alt="Photo of a pokemon">
     <mat-card-actions>
-        <button mat-fab extended color="warn" 
-        (click)="globalService.addToTeam({
-          name: pokemon,
-          time: 'time',
-          imageUrl: pegarImagemPokemon()
-        })">
-            <mat-icon>add_circle</mat-icon>
-            meu time
+        <button mat-fab extended color="warn" (click)="globalService.removeInTeam({
+            name: pokemon,
+            time: 'time',
+            imageUrl: imageUrl
+          })">
+            <mat-icon>remove_circle</mat-icon>
+                        meu time
           </button>    </mat-card-actions>
   </mat-card>

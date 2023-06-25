@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { GlobalService } from '../global.service';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -6,6 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./pokemon-card.component.css']
 })
 export class PokemonCardComponent {
+  constructor(public globalService: GlobalService){}
   @Input()
   pokemon: string = "pokemon de teste";
 

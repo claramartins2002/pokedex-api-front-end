@@ -1,7 +1,8 @@
 <div class="pokemon-list">
-    <app-pokemon-card
-      *ngFor="let pokemon of teamService.pokemons; index as i"
+    <app-team-card
+      *ngFor="let pokemon of globalService.getTeam(); index as i"
       [pokemon]="pokemon['name']"
-      [numero]="i + 1"
-    ></app-pokemon-card>
+      [imageUrl]="pokemon['imageUrl']"
+      [type]="pokemon['tipo']"
+    ></app-team-card>
   </div>
